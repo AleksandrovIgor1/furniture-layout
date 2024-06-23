@@ -1,0 +1,16 @@
+@import "mixins";
+.advantages {
+	@include flex-column-center;
+	margin-bottom: 5em;
+	gap: 2em;
+
+	&-card {
+		display: flex;
+		gap: 5em;
+
+		&-desc {
+			@include flex-column-center;
+			width: 50vw;
+		}
+	}
+}

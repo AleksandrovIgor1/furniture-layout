@@ -1,0 +1,70 @@
+@media (max-width: 1280px) {
+	.container {
+		max-width: 970px;
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		max-width: 850px;
+	}
+
+	.header-logo-img {
+		width: 6em;
+	}
+
+	.order-section {
+
+		& h1 {
+			font-size: 1.75em;
+		}
+
+		& button {
+			font-size: 1.5em;
+		}
+	}
+	
+	.pricing {
+		flex-direction: column;
+	}
+
+	.advantages-card {
+		gap: 4em;
+
+		& img {
+			max-width: 5em;
+		}
+	}
+	
+	.footer-social img {
+		max-width: 1rem;
+	}
+
+	h2 {
+		font-size: 1.25em;
+	}
+	p {
+		font-size: 0.875em;
+	}
+
+	a {
+		font-size: 0.75em;
+	}
+}
+
+@media (max-width: 650px) {
+	.container {
+		max-width: none;
+	}
+	.order-section-email  {
+		font-size: 0.75em;
+	}
+
+	.advantages-card {
+		gap: 3em;
+	}
+
+	.pricing-card {
+		max-width: 18em;
+	}
+}

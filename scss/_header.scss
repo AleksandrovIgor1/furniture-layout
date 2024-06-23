@@ -1,0 +1,31 @@
+@import "variables";
+@import "mixins";
+.header {
+	position: sticky;
+	z-index: 1;
+	top: 0;
+	display: flex;
+	padding: 0.375em 0;
+	justify-content: space-around;
+	background-color: $background-color;
+	align-items: center;
+
+	.header-logo-img {
+		height: 100%;
+		max-width: 8em;
+		margin-left: 1.25em;
+	}
+
+	.nav-bar ul {
+		display: flex;
+		justify-content: space-around;
+		gap: 1.75em;
+
+		a {
+
+			&:hover{
+				@include button-color-hover($hover-color);				
+			}
+		}
+	}
+}
